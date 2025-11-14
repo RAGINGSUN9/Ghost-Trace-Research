@@ -48,3 +48,25 @@ Its purpose is not malicious but educational: enabling blue teams to refine aler
 Only authorized personnel should deploy this within isolated labs or pre-approved test systems using internally managed "C2" endpoints—never in production environments. All activities must comply with legal frameworks and ethical standards governing offensive security research.
 
 Ultimately, it supports proactive threat hunting initiatives and strengthens resilience against credential theft campaigns, insider threats, and living-off-the-land breaches that abuse native OS utilities for nefarious purposes. Paired with telemetry analysis, this tool enhances visibility into attacker pathways, helping defenders build layered, adaptive protection strategies aligned with MITRE ATT&CK™ framework principles.
+Requirment
+Installation
+
+Before running Ghost‑Trace‑Research, you need to install the required Python packages. You can do this using pip and the provided requirements.txt file.
+
+pip install -r requirements.txt
+
+Notes
+
+The project has some optional features that require additional packages:
+
+Keylogging & keyboard capture: pynput
+
+Screenshot capture: Pillow
+
+Clipboard monitoring: pyperclip
+
+Windows-specific system calls: pywin32
+
+Make sure you run this project in a controlled lab environment. It is designed for research and defensive security testing purposes only. Running it on production or unauthorized systems may violate legal or ethical rules.
+
+Tested with Python 3.11+. Older versions may not work reliably.
